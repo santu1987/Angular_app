@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--Con este ejemplo puedo remplazar clases y reasignar clases a botones, div, etc.... -->
+<html ng-app>
+	<head>
+		<meta charset="utf-8">
+		<title>Primera app con Angular JS</title>
+		<script type="text/javascript" src="../angular.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<button ng-click="bandera = !bandera"  ng-class="{'hover':bandera, 'no-hover' : !bandera}">
+			Hover me
+		</button>
+		<spn ng-show="bandera">&lt;- click me</spn>
+		<p>
+			{{bandera | json}}
+		</p>
+	</body>	
+</html>
